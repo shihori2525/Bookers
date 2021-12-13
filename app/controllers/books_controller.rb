@@ -22,7 +22,7 @@ end
 def update
   book=Book.find(params[:id])
   book.update(book_params)
-  reditect_to book_path(book)
+  redirect_to book_path(book.id)
 end
 
 def destroy

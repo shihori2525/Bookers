@@ -28,7 +28,7 @@ table {
 }
 
 h1 {
-   display: block;
+    display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -63,6 +63,7 @@ h2 {
 
 .actions {
   display:block;
+  margin-bottom:10px;
 }
 
 .show {
@@ -72,4 +73,8 @@ h2 {
 
 .show-box {
   margin:33px;
+}
+
+.edit {
+  display:block;
 }
