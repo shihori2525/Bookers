@@ -8,6 +8,7 @@ end
 
 def index
   @books=Book.all
+  @book=Book.new
 end
 
 def show
@@ -22,7 +23,7 @@ end
 def update
   book=Book.find(params[:id])
   book.update(book_params)
-  redirect_to book_path(book.id)
+  redirect_to book_path(book)
 end
 
 def destroy
@@ -34,7 +35,7 @@ end
 
 private
 def book_params
-  params.permit(:title, :body)
+  params.require(:book).permit(:title, :body)
 end
 
 end
