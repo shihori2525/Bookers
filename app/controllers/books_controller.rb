@@ -30,7 +30,8 @@ def update
   redirect_to book_path(@book),notice:'Book was successfully updated.'
   else
   @books=Book.all
-  render :show
+  render :edit
+
   end
 end
 
